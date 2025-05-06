@@ -1,0 +1,17 @@
+{
+    "name": "com.brandonjm.hrtk",
+    "version": "0.0.1",
+    "displayName": "Haptic Retargeting Toolkit",
+    "description": "",
+    "unity": "2020.3",
+    "documentationUrl": "",
+    "changelogUrl": "",
+    "licensesUrl": "",
+    "dependencies": {
+    },
+    "author": {
+      "name": "Brandon Matthews",
+      "email": "brandonjmatthews@outlook.com",
+      "url": "https://www.unity3d.com"
+    }
+  }

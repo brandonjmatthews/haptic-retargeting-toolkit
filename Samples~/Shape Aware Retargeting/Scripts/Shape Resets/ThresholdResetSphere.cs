@@ -1,0 +1,63 @@
+using HRTK.Modules.ShapeRetargeting;
+using UnityEngine;
+
+namespace HRTK
+{
+    [RequireComponent(typeof(PrimitivePlane))]
+    public class ThresholdResetSphere : ThresholdReset
+    {
+        [SerializeField] PrimitiveSphere ThresholdSphere;
+
+        private void Start() {
+            if (ThresholdSphere == null) ThresholdSphere = GetComponent<PrimitiveSphere>();
+
+            ConfigureInitialReset();
+        }
+
+        public override void ConfigureInitialReset()
+        {
+            ThresholdSphere.Radius = StaticDistance;
+        }
+
+        public override void ConfigureStaticReset(TrackedTarget currentTracked, VirtualTarget currentVirtual, TrackedTarget nextTracked = null, VirtualTarget nextVirtual = null)
+        {
+            transform.position = currentVirtual.transform.position;
+            ThresholdSphere.Radius = StaticDistance;
+        }
+
+        public override void ConfigureAdaptiveReset(TrackedTarget currentTracked, VirtualTarget currentVirtual, TrackedTarget nextTracked, VirtualTarget nextVirtual)
+        {
+            Vector3 virtualMidpoint = Util.GetMidpoint(currentVirtual.Target.position, nextVirtual.Target.position);
+            Vector3 trackedMidpoint = Util.GetMidpoint(currentTracked.Target.position, nextTracked.Target.position);
+
+            Vector3 direction = Head.transform.position - virtualMidpoint;
+            
+            float angleHeight = 0.0f;
+            float translateHeight = 0.0f;
+            // Get midpoint between both virtual targets
+
+            if (currentTracked == nextTracked)
+            {
+                angleHeight = AdaptiveReset.AdaptiveAngleHeightShared(nextTracked, nextVirtual, currentTracked, currentVirtual, AdaptiveMaxAngle);
+                translateHeight = AdaptiveReset.AdaptiveTransHeightShared(nextTracked, nextVirtual, currentTracked, currentVirtual, AdaptiveMaxTranslation);
+            }
+            else
+            {
+                if (Util.CalculateAngle(virtualMidpoint, trackedMidpoint, currentVirtual.Target.position, currentTracked.Target.position) > AdaptiveMaxAngle)
+                {
+                    angleHeight = AdaptiveReset.AdaptiveAngleHeight(nextTracked, nextVirtual, currentTracked, currentVirtual, direction, AdaptiveMaxAngle, AdaptiveMaxDistance, AdaptiveTolerance);
+                }
+
+                if (Util.CalculateTranslation(virtualMidpoint, trackedMidpoint, currentVirtual.Target.position, currentTracked.Target.position) > AdaptiveMaxTranslation)
+                {
+                    translateHeight = AdaptiveReset.AdaptiveTransHeight(nextTracked, nextVirtual, currentTracked, currentVirtual, direction, AdaptiveMaxTranslation, AdaptiveMaxDistance, AdaptiveTolerance);
+                }
+            }
+
+            float distance = Mathf.Max(Mathf.Abs(angleHeight), Mathf.Abs(translateHeight));
+        
+            transform.position = trackedMidpoint;
+            ThresholdSphere.Radius = distance;
+        }
+    }
+}

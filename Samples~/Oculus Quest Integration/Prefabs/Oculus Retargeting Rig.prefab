@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8631217952652960727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8631217952652960724}
+  - component: {fileID: 8631217952652960725}
+  m_Layer: 0
+  m_Name: Oculus Retargeting Rig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8631217952652960724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631217952652960727}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8631217952652960725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631217952652960727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b677edaeacbcf2488602f5494537cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftHandPrefab: {fileID: 1364011683308924405, guid: 6d21723c988d82640937ccc09add09c5,
+    type: 3}
+  RightHandPrefab: {fileID: 3085857086773537492, guid: 41994aaacaf9c4544b16246129961b4f,
+    type: 3}
+  OriginPrefab: {fileID: 1004715149642916671, guid: 4f9d8c679fab6344fb1ec48fe9354800,
+    type: 3}
+  LeftHandAnchor: {fileID: 0}
+  RightHandAnchor: {fileID: 0}

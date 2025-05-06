@@ -1,0 +1,84 @@
+// test.compute
+
+
+Texture2D<float4> _Source;
+RWTexture2D<float4> _Destination;
+
+SamplerState samplerLinearClamp;
+
+int2 _Size;
+
+#define EPSILON 1e-6f
+
+#pragma kernel Downsample
+
+// 2:1 bilinear downsample
+
+[numthreads(8,8,1)]
+void SelectiveDownsample (uint3 dtid : SV_DispatchThreadID)
+{
+    /* Pixel Layout 
+        0, 1
+        2, 3
+    */
+    
+
+    int2 src0 = int2(dtid.x * 2, dtid.y * 2);
+    int2 src1 = int2(dtid.x * 2 + 1, dtid.y * 2);
+    int2 src2 = int2(dtid.x * 2, dtid.y * 2+1);
+    int2 src3 = int2(dtid.x * 2 + 1, dtid.y * 2+1);
+
+    float4 srcColor0 = _Source[src0];
+    float4 srcColor1 = _Source[src1];
+    float4 srcColor2 = _Source[src2];
+    float4 srcColor3 = _Source[src3];
+
+
+    int count = 0;
+    float3 color = float4(0,0,0);
+
+    // float3  color += lerp(float3(0,0,0), srcColor0.rgb, step(EPSILON, srcColor0.a));
+    //         color += lerp(float3(0,0,0), srcColor1.rgb, step(EPSILON, srcColor1.a));
+    //         color += lerp(float3(0,0,0), srcColor2.rgb, step(EPSILON, srcColor2.a));
+    //         color += lerp(float3(0,0,0), srcColor3.rgb, step(EPSILON, srcColor3.a));
+
+    if (srcColor0.a == 0.0) {
+        color += srcColor0.rgb;
+        count++;
+    }
+
+    if (srcColor1.a == 0.0) {
+        color += srcColor1.rgb;
+        count++;
+    }
+
+    if (srcColor2.a == 0.0) {
+        color += srcColor2.rgb;
+        count++;
+    }
+
+    if(srcColor3.a == 0.0) {
+        color += srcColor3.rgb;
+        count++;
+    }
+
+    if (count > 0) {
+        color = float3(color.r/count, color.g/count, color.b/count);
+    }
+
+    res[dtid.xy] = float4(color.r, color.g, color.b, 1.0);
+}
+
+
+
+
+#pragma kernel Upsample
+
+// 2:1 bilinear downsample
+
+[numthreads(8,8,1)]
+void SelectiveDownsample (uint3 dtid : SV_DispatchThreadID)
+{
+
+}
+
