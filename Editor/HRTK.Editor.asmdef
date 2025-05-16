@@ -1,0 +1,16 @@
+{
+    "name": "brandonjm.HRTK.Editor",
+    "rootNamespace": "HRTK",
+    "references": [
+        "GUID:2801cd5bcc791bd4f89a3d9499f9c22e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
