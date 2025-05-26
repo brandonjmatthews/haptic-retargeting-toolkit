@@ -12,7 +12,23 @@
     },
     "author": {
       "name": "Brandon Matthews",
-      "email": "brandonjmatthews@outlook.com",
-      "url": "https://www.unity3d.com"
-    }
+      "email": "brandonjmatthews@outlook.com"
+    },
+        "samples": [
+        {
+            "displayName": "Meta Quest Hand Integration",
+            "description": "Integration and samples for Oculus Quest hand tracking.",
+            "path": "Samples~/Quest Hands Integration"
+        },
+        {
+            "displayName": "Leap Motion Hand Integration",
+            "description": "Integration and samples for Leap Motion hand tracking.",
+            "path": "Samples~/LeapMotion Hands Integration"
+        },
+        {
+            "displayName": "OpenXR Hand Integration",
+            "description": "Integration and samples for OpenXR hand tracking.",
+            "path": "Samples~/OpenXR Hands Integration"
+        }
+    ]
   }
