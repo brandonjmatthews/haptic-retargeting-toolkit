@@ -1,3 +1,10 @@
+//
+// HRTK: PassthroughBackgroundManualEye.shader
+// Modified from Ultraleap's PassthroughBackground.shader:
+// Apache License, Version 2.0
+// Modifications Copyright (c) 2023 Brandon Matthews
+//
+
 Shader "HRTK/LeapMotion/Passthrough Background Manual" {
 	Properties
 	{

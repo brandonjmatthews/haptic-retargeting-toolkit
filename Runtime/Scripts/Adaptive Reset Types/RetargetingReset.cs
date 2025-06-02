@@ -1,3 +1,9 @@
+/*
+ * HRTK: RetargetingReset.cs
+ *
+ * Copyright (c) 2021 Brandon Matthews
+ */
+
 using UnityEngine;
 using UnityEngine.Events;
 

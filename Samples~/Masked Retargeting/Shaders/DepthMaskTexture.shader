@@ -1,3 +1,10 @@
+//
+// HRTK: DepthMaskTexture.shader
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
+
 Shader "Transparent/DepthMaskTexture" {
 	Properties
 

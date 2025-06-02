@@ -1,4 +1,9 @@
-// Custom shader to draw our toy cubes and balls with an outline around them.
+//
+// HRTK: OutlineSelection.shader
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
 Shader "HRTK/OutlineSelection" 
 {
 	Properties 

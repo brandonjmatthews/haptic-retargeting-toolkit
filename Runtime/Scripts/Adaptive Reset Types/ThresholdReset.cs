@@ -1,3 +1,9 @@
+/*
+ * HRTK: ThresholdReset.cs
+ *
+ * Copyright (c) 2021 Brandon Matthews
+ */
+
 using System.Collections.Generic;
 using HRTK.Modules.ShapeRetargeting;
 using UnityEngine;

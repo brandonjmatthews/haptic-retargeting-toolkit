@@ -1,3 +1,9 @@
+/*
+ * HRTK: RayDwellSelector.cs
+ *
+ * Copyright (c) 2019 Brandon Matthews
+ */
+
 using UnityEngine;
 using UnityEngine.Events;
 

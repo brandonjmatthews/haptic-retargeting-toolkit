@@ -1,3 +1,9 @@
+/*
+ * HRTK: PrimitivePlane.cs
+ *
+ * Copyright (c) 2021 Brandon Matthews
+ */
+
 using UnityEngine;
 
 namespace HRTK.Modules.ShapeRetargeting 
@@ -62,33 +68,29 @@ namespace HRTK.Modules.ShapeRetargeting
             return SDF.Plane(RelativePoint(position), Normal, OriginDistance);
         }
 
-        // protected override void Draw()
-        // {
-            
-        // }
-
-        private void OnDrawGizmos() {
+        private void OnDrawGizmos()
+        {
             Color oldColor = Gizmos.color;
             Gizmos.color = Color.cyan;
 
             Vector3 position = transform.position - (TransformedNormal * Height);
-            
+
             Gizmos.DrawRay(position, TransformedNormal * 0.5f);
-            
+
             if (NormalDirection == Direction.Forward || NormalDirection == Direction.Back)
             {
-                Gizmos.DrawLine(position + transform.right   * -0.1f, position + transform.right * 0.1f);
-                Gizmos.DrawLine(position + transform.up      * -0.1f, position + transform.up    * 0.1f);
+                Gizmos.DrawLine(position + transform.right * -0.1f, position + transform.right * 0.1f);
+                Gizmos.DrawLine(position + transform.up * -0.1f, position + transform.up * 0.1f);
             }
             else if (NormalDirection == Direction.Up || NormalDirection == Direction.Down)
             {
-                Gizmos.DrawLine(position + transform.right   * -0.1f, position + transform.right   * 0.1f);
+                Gizmos.DrawLine(position + transform.right * -0.1f, position + transform.right * 0.1f);
                 Gizmos.DrawLine(position + transform.forward * -0.1f, position + transform.forward * 0.1f);
             }
             else
             {
                 Gizmos.DrawLine(position + transform.forward * -0.1f, position + transform.forward * 0.1f);
-                Gizmos.DrawLine(position + transform.up      * -0.1f, position + transform.up      * 0.1f);
+                Gizmos.DrawLine(position + transform.up * -0.1f, position + transform.up * 0.1f);
             }
 
             Gizmos.color = oldColor;

@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * HRTK: MeshGroupRetargetingShape.cs
+ *
+ * Copyright (c) 2021 Brandon Matthews
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

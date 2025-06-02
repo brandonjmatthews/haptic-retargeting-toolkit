@@ -1,3 +1,9 @@
+//
+// HRTK: MaskedUpscale.compute
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
 Shader "VSTAR/InpaintUpscale"
 {
     Properties

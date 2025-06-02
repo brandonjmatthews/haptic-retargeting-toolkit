@@ -1,3 +1,9 @@
+/*
+ * HRTK: InspectorSelectorEditor.cs
+ *
+ * Copyright (c) 2019 Brandon Matthews
+ */
+
 #if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;

@@ -1,3 +1,9 @@
+/*
+ * HRTK: PrimitiveSphere.cs
+ *
+ * Copyright (c) 2021 Brandon Matthews
+ */
+
 using UnityEngine;
 
 namespace HRTK.Modules.ShapeRetargeting 

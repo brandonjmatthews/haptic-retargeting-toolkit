@@ -1,3 +1,9 @@
+/*
+ * HRTK: TargetMapping.cs
+ *
+ * Copyright (c) 2019 Brandon Matthews
+ */
+
 using UnityEngine;
 using System.Collections.Generic;
 

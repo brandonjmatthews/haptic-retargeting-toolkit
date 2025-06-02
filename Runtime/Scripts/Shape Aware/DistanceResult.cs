@@ -1,10 +1,11 @@
 /**
-Haptic Retargeting Took-kit Prototype
-DistanceResult.cs
+ * HRTK: DistanceResult.cs
+ *
+ * Copyright (c) 2021 Brandon Matthews
+ * Struct to contain the shortest distance between shapes and nearest points.
+ */
 
-Struct to contain the shortest distance between shapes and nearest points.
-@author: Brandon Matthews, 2021
-*/
+
 
 using UnityEngine;
 

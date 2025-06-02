@@ -1,3 +1,9 @@
+/*
+ * HRTK: BlurOptimized.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
 using System;
 using UnityEngine;
 

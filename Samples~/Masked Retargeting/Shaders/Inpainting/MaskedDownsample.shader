@@ -1,3 +1,9 @@
+//
+// HRTK: MaskedDownsample.compute
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
 Shader "VSTAR/MaskedDownsample"
 {
     Properties

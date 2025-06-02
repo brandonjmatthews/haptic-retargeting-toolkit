@@ -1,3 +1,9 @@
+/*
+ * HRTK: SourceCamera.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
 using System;
 using UnityEngine;
 

@@ -1,3 +1,10 @@
+//
+// HRTK: DepthMaskCustom.shader
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
+
 Shader "VSTAR/DepthMaskCustom" {
 	Properties
 

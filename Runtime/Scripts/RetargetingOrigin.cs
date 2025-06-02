@@ -1,3 +1,9 @@
+/*
+ * HRTK: RetargetingOrigin.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
 using UnityEngine;
 using UnityEngine.Events;
 

@@ -1,5 +1,8 @@
-
-
+/*
+ * HRTK: MeshComputeHelpers.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
 
 using UnityEngine;
 

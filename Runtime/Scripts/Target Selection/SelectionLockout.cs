@@ -1,3 +1,9 @@
+/*
+ * HRTK: SelectionLockout.cs
+ *
+ * Copyright (c) 2019 Brandon Matthews
+ */
+
 using UnityEngine;
 
 namespace HRTK

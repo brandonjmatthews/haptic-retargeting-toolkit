@@ -1,9 +1,9 @@
-/**
-Haptic Retargeting Took-kit Prototype
-MeshRetargetingShape.cs
+/*
+ * HRTK: RetargetingShape.cs
+ *
+ * Copyright (c) 2021 Brandon Matthews
+ */
 
-@author: Brandon Matthews, 2021
-*/
 
 using UnityEngine;
 

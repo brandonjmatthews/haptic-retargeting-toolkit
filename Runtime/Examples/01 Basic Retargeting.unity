@@ -166,8 +166,8 @@ MonoBehaviour:
   DominantHand: 1
   LeftHandController: {fileID: 0}
   RightHandController: {fileID: 1188281348}
-  Head: {fileID: 0}
-  RenderCamera: {fileID: 0}
+  Head: {fileID: 555422478}
+  RenderCamera: {fileID: 555422479}
   TrackedTargets:
   - {fileID: 0}
   VirtualTargets:
@@ -196,6 +196,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -209,11 +210,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 539960759276088113, guid: 7d9fb600b433ca24f81b978947ee1bd9, type: 3}
       propertyPath: m_Name
-      value: Primitive Hand Right (Virtual)
+      value: Virtual Hand
       objectReference: {fileID: 0}
+    - target: {fileID: 800975835810338426, guid: 7d9fb600b433ca24f81b978947ee1bd9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b68e415598b256c4582cb8dc86ddbd94, type: 2}
     - target: {fileID: 3541248415022962978, guid: 7d9fb600b433ca24f81b978947ee1bd9, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3541248415022962978, guid: 7d9fb600b433ca24f81b978947ee1bd9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -353,6 +358,7 @@ Transform:
   m_LocalRotation: {x: 0.39640167, y: -0, z: -0, w: 0.9180772}
   m_LocalPosition: {x: 0, y: 1.517, z: -0.711}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -381,11 +387,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 539960759276088113, guid: 7d9fb600b433ca24f81b978947ee1bd9, type: 3}
       propertyPath: m_Name
-      value: Primitive Hand Right (Tracked)
+      value: Tracked Hand
       objectReference: {fileID: 0}
+    - target: {fileID: 800975835810338426, guid: 7d9fb600b433ca24f81b978947ee1bd9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 49ea830c17f10d848af903c17a2d8c04, type: 2}
     - target: {fileID: 3541248415022962978, guid: 7d9fb600b433ca24f81b978947ee1bd9, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3541248415022962978, guid: 7d9fb600b433ca24f81b978947ee1bd9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -453,7 +463,7 @@ GameObject:
   - component: {fileID: 1188281348}
   - component: {fileID: 1188281350}
   m_Layer: 0
-  m_Name: Right Hand Retargeting Controller
+  m_Name: Retargeting Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -516,6 +526,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -543,7 +554,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4613899260007804086, guid: 1ab5cbaaee6b54240b9d47dc76e89df8, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4613899260007804086, guid: 1ab5cbaaee6b54240b9d47dc76e89df8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -587,15 +598,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4613899260007804087, guid: 1ab5cbaaee6b54240b9d47dc76e89df8, type: 3}
       propertyPath: m_Name
-      value: Dev Environment
+      value: Environment
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ab5cbaaee6b54240b9d47dc76e89df8, type: 3}
---- !u!4 &1556977610 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2590355813437438133, guid: 1ab5cbaaee6b54240b9d47dc76e89df8, type: 3}
-  m_PrefabInstance: {fileID: 1556977609}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1699490587 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 280314576385622306, guid: e368fd1bdf652754eb3b834a3df80590, type: 3}
@@ -645,7 +651,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1556977610}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1085461013, guid: e368fd1bdf652754eb3b834a3df80590, type: 3}
       propertyPath: _size.x
@@ -673,7 +679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4114201753753913832, guid: e368fd1bdf652754eb3b834a3df80590, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4114201753753913832, guid: e368fd1bdf652754eb3b834a3df80590, type: 3}
       propertyPath: m_LocalScale.x
@@ -693,7 +699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4114201753753913832, guid: e368fd1bdf652754eb3b834a3df80590, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.14
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 4114201753753913832, guid: e368fd1bdf652754eb3b834a3df80590, type: 3}
       propertyPath: m_LocalPosition.z
@@ -729,7 +735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4114201753753913833, guid: e368fd1bdf652754eb3b834a3df80590, type: 3}
       propertyPath: m_Name
-      value: Primitive Cube Setup
+      value: Cubes
       objectReference: {fileID: 0}
     - target: {fileID: 8700373368403187985, guid: e368fd1bdf652754eb3b834a3df80590, type: 3}
       propertyPath: hand
@@ -750,11 +756,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1556977610}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1004715149642916670, guid: 4f9d8c679fab6344fb1ec48fe9354800, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1004715149642916670, guid: 4f9d8c679fab6344fb1ec48fe9354800, type: 3}
       propertyPath: m_LocalPosition.x
@@ -762,7 +768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1004715149642916670, guid: 4f9d8c679fab6344fb1ec48fe9354800, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.15
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1004715149642916670, guid: 4f9d8c679fab6344fb1ec48fe9354800, type: 3}
       propertyPath: m_LocalPosition.z
@@ -798,7 +804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1004715149642916671, guid: 4f9d8c679fab6344fb1ec48fe9354800, type: 3}
       propertyPath: m_Name
-      value: Retargeting Origin
+      value: Origin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f9d8c679fab6344fb1ec48fe9354800, type: 3}
@@ -902,6 +908,7 @@ Transform:
   m_LocalRotation: {x: 0.15163636, y: 0.49458987, z: -0.85564667, w: 0.016001439}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1

@@ -1,3 +1,9 @@
+/*
+ * HRTK: Matrix4x4Extensions.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
 using UnityEngine;
 
 public static class Matrix4x4Extensions {

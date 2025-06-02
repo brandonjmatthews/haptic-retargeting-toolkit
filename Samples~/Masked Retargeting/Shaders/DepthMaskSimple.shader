@@ -1,3 +1,9 @@
+//
+// HRTK: DepthMaskSimple.shader
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
 Shader "Transparent/DepthMaskSimple" {
 	Properties
 

@@ -1,3 +1,9 @@
+// Adapted from: ChristianQui's reorderable polymorphic list.
+// MIT License
+// Copyright (c) 2020 Cristian Qiu Félez
+// https://github.com/CristianQiu/Unity-Editor-PolymorphicReorderableList/blob/master/Assets/Code/Editor/BaseCharacterEditor.cs
+// Modifications (c) 2023 Brandon Matthews
+
 #if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;

@@ -1,4 +1,10 @@
-﻿Shader "Unlit/AllWhite"
+﻿//
+// HRTK: AllWhite.shader
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
+Shader "Unlit/AllWhite"
 {
     Properties
     {

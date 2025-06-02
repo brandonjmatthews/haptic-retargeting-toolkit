@@ -1,5 +1,10 @@
+//
+// HRTK: MeshDistanceHelpers.compute
+//
+// Copyright (c) 2021 Brandon Matthews
+//
 // Mesh and Skinned Mesh Distance Compute Helpers
-// Author: Brandon Matthews, 2021
+//
 
 struct DistanceResult {
   float3 pointA;

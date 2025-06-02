@@ -1,3 +1,9 @@
+/*
+ * HRTK: TargetSelector.cs
+ *
+ * Copyright (c) 2019 Brandon Matthews
+ */
+
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;

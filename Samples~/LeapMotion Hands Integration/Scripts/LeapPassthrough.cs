@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * HRTK: LeapPassthrough.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using Leap.Unity;
 using UnityEngine;

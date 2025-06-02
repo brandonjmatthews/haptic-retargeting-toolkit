@@ -1,3 +1,9 @@
+/*
+ * HRTK: SelectionIndicator.cs
+ *
+ * Copyright (c) 2019 Brandon Matthews
+ */
+
 using System;
 using HRTK;
 using UnityEngine;

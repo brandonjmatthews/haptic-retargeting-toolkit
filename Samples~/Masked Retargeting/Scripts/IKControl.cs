@@ -1,3 +1,9 @@
+/*
+ * HRTK: IKControl.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
 using UnityEngine;
 using System;
 using System.Collections;

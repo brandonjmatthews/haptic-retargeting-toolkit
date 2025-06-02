@@ -1,4 +1,10 @@
-﻿Shader "HRTK/Toon"
+﻿//
+// HRTK: Toon.shader
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
+Shader "HRTK/Toon"
 {
 	Properties
 	{

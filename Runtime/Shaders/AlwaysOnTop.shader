@@ -1,4 +1,11 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+﻿//
+// HRTK: AlwaysOnTop.shader
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 
  Shader "Custom/AlwaysOnTop" {
      Properties {

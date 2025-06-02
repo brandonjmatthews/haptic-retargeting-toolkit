@@ -1,3 +1,9 @@
+/*
+ * HRTK: JointRetargetingShape.cs
+ *
+ * Copyright (c) 2021 Brandon Matthews
+ */
+
 using System.Collections.Generic;
 using UnityEngine;
 

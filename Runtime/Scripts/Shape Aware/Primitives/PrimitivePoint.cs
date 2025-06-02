@@ -1,3 +1,9 @@
+/*
+ * HRTK: PrimitivePoint.cs
+ *
+ * Copyright (c) 2021 Brandon Matthews
+ */
+
 using UnityEngine;
 
 namespace HRTK.Modules.ShapeRetargeting 
@@ -28,11 +34,6 @@ namespace HRTK.Modules.ShapeRetargeting
             result.intersecting = 0;
             return result;
         }
-
-        // protected override void Draw()
-        // {
-            
-        // }
 
         private void OnDrawGizmos() {
             Color oldColor = Gizmos.color;

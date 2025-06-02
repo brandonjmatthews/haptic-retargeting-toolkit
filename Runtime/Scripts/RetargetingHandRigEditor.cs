@@ -1,3 +1,9 @@
+/*
+ * HRTK: RetargetingHandRigEditor.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
 #if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;

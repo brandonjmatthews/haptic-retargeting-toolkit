@@ -1,3 +1,9 @@
+/*
+ * HRTK: ReadOnly.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
 using UnityEditor;
 using UnityEngine;
 

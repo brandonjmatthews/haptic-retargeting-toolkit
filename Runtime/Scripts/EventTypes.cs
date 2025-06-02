@@ -1,3 +1,9 @@
+/*
+ * HRTK: EventTypes.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
 using UnityEngine.Events;
 
 namespace HRTK {

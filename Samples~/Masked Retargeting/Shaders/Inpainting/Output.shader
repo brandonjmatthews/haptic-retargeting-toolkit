@@ -1,3 +1,9 @@
+//
+// HRTK: Output.compute
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
 Shader "HRTK/MaskedRetargeting/Output" {
 	Properties
 	{

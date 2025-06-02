@@ -1,3 +1,10 @@
+//
+// HRTK: UnlitTextureColorNoDepth.shader
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
+
 Shader "HRTK/Unlit/TextureColorNoDepth"
 {
     Properties

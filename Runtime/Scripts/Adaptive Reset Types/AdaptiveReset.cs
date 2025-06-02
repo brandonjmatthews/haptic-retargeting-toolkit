@@ -1,3 +1,9 @@
+/*
+ * HRTK: AdaptiveReset.cs
+ *
+ * Copyright (c) 2021 Brandon Matthews
+ */
+
 using UnityEngine;
 using System.Collections.Generic;
 

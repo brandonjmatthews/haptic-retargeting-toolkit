@@ -1,3 +1,9 @@
+//
+// HRTK: ExpandAndRenderInside.shader
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
 Shader "Custom/ExpandAndRenderInside"
 {
     Properties

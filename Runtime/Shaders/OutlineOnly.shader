@@ -1,3 +1,9 @@
+//
+// HRTK: OutlineOnly.shader
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
 Shader "HRTK/Silhouette Only" {
 	Properties {
 		_OutlineColor ("Outline Color", Color) = (0,0,0,1)

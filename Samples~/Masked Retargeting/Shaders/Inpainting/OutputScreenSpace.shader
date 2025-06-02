@@ -1,3 +1,9 @@
+//
+// HRTK: OutputSceenSpace.compute
+//
+// Copyright (c) 2023 Brandon Matthews
+//
+
 Shader "HRTK/MaskedRetargeting/OutputScreenSpace" {
 	Properties
 	{

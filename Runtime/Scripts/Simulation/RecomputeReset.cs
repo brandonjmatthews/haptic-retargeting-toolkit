@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * HRTK: RecomputeReset.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

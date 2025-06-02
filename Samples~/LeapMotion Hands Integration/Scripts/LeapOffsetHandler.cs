@@ -1,3 +1,9 @@
+/*
+ * HRTK: LeapOffsetHandler.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
 using UnityEngine;
 using Leap;
 using Leap.Unity;

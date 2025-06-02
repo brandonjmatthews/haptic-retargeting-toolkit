@@ -1,4 +1,4 @@
-// Source:
+// Source: ShadersLaboratory
 // https://www.youtube.com/watch?v=X6AEPmXR7gY
 // https://pastebin.com/QUX68uNf
 Shader "HRTK/Geometry/Wireframe"

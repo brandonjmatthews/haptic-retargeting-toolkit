@@ -1,9 +1,8 @@
-/**
-Haptic Retargeting Took-kit Prototype
-SkinRetargetingShape.cs
-
-@author: Brandon Matthews, 2021
-*/
+/*
+ * HRTK: SkinRetargetingShape.cs
+ *
+ * Copyright (c) 2021 Brandon Matthews
+ */
 
 
 using System.Collections.Generic;

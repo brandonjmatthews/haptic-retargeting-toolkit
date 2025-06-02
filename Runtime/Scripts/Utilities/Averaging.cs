@@ -1,3 +1,9 @@
+/*
+ * HRTK: Averaging.cs
+ *
+ * Copyright (c) 2023 Brandon Matthews
+ */
+
 using UnityEngine;
 
 public class Averaging
