@@ -58,7 +58,7 @@ Key things to note are:
 - We provide a tool for configuring your "Retargeting Rig" which can automatically add and configure some elements of the scene. Go to the HRTK menu and click Build Retargeting Rig.
   - Step through the menu top to bottom populating fields and clicking buttons as they become available to configure your scene. 
 
-![retargeting rig dialog box](./Assets~/basic_example_origin.png "Basic example scene hand at origin")
+![retargeting rig dialog box](./Assets~/retargeting_rig.png "Retargeting Rig Dialog")
 
 ## Modules
 Experimental functionality and platform specific integrations are broken out into modules so you can pick and choose which parts you want to integrate. These require additional plugins to be installed.
